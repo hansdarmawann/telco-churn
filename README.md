@@ -23,29 +23,34 @@ Key Objectives:
 ## 4. Project Structure
 
 ```
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-└── src                <- Source code for use in this project.
-
+telco-churn/
+├── README.md                          <- Main documentation for the project.
+├── requirements.txt                  <- Python dependencies for the project environment.
+├── assets/                          <- Project assets like images.
+│   └── logo-purwadhika.png          <- Logo image file.
+├── data/                           <- All data related to the project.
+│   ├── external/                   <- Data from third-party sources.
+│   │   └── data-external.csv       <- External source data file.
+│   ├── interim/                   <- Transformed/intermediate data.
+│   │   └── data-cleaned.csv        <- Cleaned data ready for further processing.
+│   ├── processed/                 <- Final datasets for modeling.
+│   │   ├── data-test.csv           <- Test dataset.
+│   │   ├── data-train.csv          <- Training dataset.
+│   │   └── data-unseen.csv         <- Unseen dataset for prediction or validation.
+│   └── raw/                       <- Original, unmodified data.
+│       └── data.csv                <- Raw source data file.
+├── models/                        <- Trained models and model artifacts.
+├── notebooks/                     <- Jupyter notebooks for exploration and development.
+│   └── 1.0-bdp-inital-notebook.ipynb  <- Initial exploration notebook.
+├── references/                   <- Documentation and reference materials.
+│   └── external references.txt    <- External reference documentation.
+├── reports/                      <- Generated reports and presentations.
+│   ├── figure/                   <- Figures and graphics used in reports.
+│   │   └── graph.bmp             <- Example graph image.
+│   └── slide/                    <- Presentation slides.
+│       └── Business Presentation.pdf  <- Business presentation file.
+├── src/                         <- Source code for the project.
+└── .git/                        <- Git version control directory (hidden).
 ```
 
 ## 5. Summary of Finding
