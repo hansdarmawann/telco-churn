@@ -4,7 +4,6 @@ By Hans Darmawan - JCDS2602
 ## 1. Business Understanding
 The business context and objectives for the telecom customer churn prediction project. The challenge of customer churn, which impacts revenue and growth, is addressed by developing predictive models to identify at-risk customers. Key factors influencing churn are examined, and actionable insights are aimed to be provided for improving retention. A structured analytical approach is planned, including model evaluation based on recall, with success criteria established to ensure high performance and interpretability.
 
-
 ## 2. Data Understanding
 The dataset is explored to understand its structure and quality. Data completeness is confirmed with no missing values found, while duplicated rows are noted but retained after careful consideration. Data types are adjusted for effective analysis, converting object columns to categorical types. Exploratory data analysis reveals important patterns in customer demographics, service usage, and churn distribution. Relationships among features are examined using visualizations and correlation analyses to inform feature selection and preprocessing strategies.
 
