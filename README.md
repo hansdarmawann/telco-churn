@@ -1,42 +1,24 @@
 # Predicting Customer Churn in Telecom: A Machine Learning Approach
+By Hans Darmawan - JCDS2602
 
-## 1. Project Overview
-This project aims to analyze telecom customer data to predict customer churn using machine learning techniques. The primary focus is to identify customers at high risk of leaving the service, understand the key factors influencing churn, and provide actionable insights to improve customer retention and business profitability.
+## 1. Business Understanding
+The business context and objectives for the telecom customer churn prediction project. The challenge of customer churn, which impacts revenue and growth, is addressed by developing predictive models to identify at-risk customers. Key factors influencing churn are examined, and actionable insights are aimed to be provided for improving retention. A structured analytical approach is planned, including model evaluation based on recall, with success criteria established to ensure high performance and interpretability.
 
-Key Objectives:
-- Develop a predictive model to classify customers as churn or non-churn.
-- Identify the most influential features driving customer churn.
-- Provide actionable recommendations to reduce churn and enhance customer loyalty.
 
-## 2. Data Sources
-- [Telco Customer Churn Dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) - Contains customer demographics, service usage, and churn status.
-- Additional internal telecom service data (if applicable).
+## 2. Data Understanding
+The dataset is explored to understand its structure and quality. Data completeness is confirmed with no missing values found, while duplicated rows are noted but retained after careful consideration. Data types are adjusted for effective analysis, converting object columns to categorical types. Exploratory data analysis reveals important patterns in customer demographics, service usage, and churn distribution. Relationships among features are examined using visualizations and correlation analyses to inform feature selection and preprocessing strategies.
 
-## 3. Technologies Used
-- Programming Language: Python (Pandas, NumPy, scikit-learn, imbalanced-learn)
-- Visualization: Matplotlib, Seaborn
-- Model Explainability: LIME
-- Machine Learning Frameworks: XGBoost, LightGBM, CatBoost
-- Version Control: Git
-- Environment: Jupyter Notebook
+## 3. Data Preparation
+The data preparation steps undertaken to ready the dataset for modeling. A new feature representing total charges is engineered, and the target variable is encoded into a binary format. The dataset is split into training and testing sets using stratified sampling to preserve class distribution. Feature types are identified, and preprocessing pipelines are constructed to apply appropriate transformations, including scaling, encoding, and mapping of categorical and binary variables. This setup ensures consistent and efficient data handling during model training.
 
-## 4. Project Structure
+## 4. Modelling
+Multiple classification models are initialized and evaluated using cross-validation with recall as the scoring metric. Various scalers are tested to identify the most effective preprocessing approach. An ensemble stacking classifier is included among the models to leverage combined strengths. Hyperparameter tuning is performed with a focus on balancing class distributions using advanced resampling techniques and optimizing AdaBoost parameters. The best-performing tuned model is selected based on recall performance.
 
-## 5. Summary of Findings
-### 5.1 Business Insight
-- Customers with shorter contract durations (month-to-month) are more likely to churn.
-- Fiber optic internet service users exhibit higher churn rates compared to DSL or no internet service.
-- Features like tenure, monthly charges, and paperless billing status significantly affect churn likelihood.
-- Service add-ons such as online security and device protection help reduce churn risk.
+## 5. Evaluation
+The evaluation of the best model on test data. Predictions are generated, and recall is calculated to assess model effectiveness, achieving high recall scores. Learning curves demonstrate stable performance without overfitting. Threshold tuning using precision-recall curves is conducted but deemed unsuitable due to potential overfitting concerns. Model interpretability is enhanced using LIME explanations, highlighting key features influencing predictions. Confusion matrix visualization provides insight into classification errors, and churn rate comparisons reveal discrepancies between predicted and actual churn rates.
 
-### 5.2 Actionable Recommendations
-- Promote longer-term contracts by offering incentives to reduce churn.
-- Improve fiber optic service quality and customer support to address dissatisfaction.
-- Enhance communication and usability of paperless billing to lower churn associated with this feature.
-- Develop targeted retention campaigns focusing on customers with short tenure and high monthly charges.
-- Bundle device protection and online security services to increase customer satisfaction and loyalty.
+## 6. Deployment
+The deployment process, including saving the final model using joblib for future use. Instructions for loading the saved model and preparing new customer data for prediction are provided, with example scenarios illustrating model application. Limitations of the model are acknowledged, particularly the tendency to overestimate churn due to prioritizing recall. Recommendations for business actions and model improvements are outlined to guide practical implementation and ongoing refinement.
 
-## 6. Contact
-- Name: Hans Darmawan  
-- Email: [your.email@example.com]  
-- LinkedIn: [linkedin.com/in/yourprofile]  
+## 7. Conclusion and Recommendations
+The analysis identified contract type as the strongest predictor of churn, with customers on shorter or month-to-month contracts more likely to leave. Higher churn risk was also associated with fiber optic internet service and paperless billing, while longer tenure reduced the likelihood of churn, indicating that newer customers are more vulnerable. The absence of device protection and online security slightly increased churn risk. The model predicted a churn rate of 55.17%, significantly higher than the actual 26.69%, revealing a notable gap. To reduce churn, businesses should promote longer-term contracts, improve fiber optic service quality, enhance the paperless billing process, engage new customers through onboarding, and promote device protection and online security services. Personalized retention strategies targeting high-risk customer segments are also recommended. For model improvement, a balance between precision and recall should be maintained, with regular retraining to adapt to changing behaviors, and calibration techniques applied to ensure accurate probability estimates and reduce overestimation.
