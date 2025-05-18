@@ -1,6 +1,8 @@
 # Predicting Customer Churn in Telecom: A Machine Learning Approach
 By Hans Darmawan - JCDS2602
 
+Notebook Link: https://github.com/hansdarmawann/telco-churn/blob/main/notebooks/1.0-hdr-init-nb.ipynb
+
 ## 1. Business Understanding
 The business context and objectives for the telecom customer churn prediction project. The challenge of customer churn, which impacts revenue and growth, is addressed by developing predictive models to identify at-risk customers. Key factors influencing churn are examined, and actionable insights are aimed to be provided for improving retention. A structured analytical approach is planned, including model evaluation based on recall, with success criteria established to ensure high performance and interpretability.
 
