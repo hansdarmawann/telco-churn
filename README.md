@@ -1,65 +1,42 @@
-<h1> [Your Project Title] </h1>
+# Predicting Customer Churn in Telecom: A Machine Learning Approach
 
 ## 1. Project Overview
-This project analyzes business data to extract insights, improve decision-making, and identify key trends. The primary focus is to **[Your Problem Statements]**(mention business objectives, such as optimizing sales, reducing operational costs, customer segmentation, etc.).
+This project aims to analyze telecom customer data to predict customer churn using machine learning techniques. The primary focus is to identify customers at high risk of leaving the service, understand the key factors influencing churn, and provide actionable insights to improve customer retention and business profitability.
 
 Key Objectives:
-- Objective 1: (E.g., Analyze customer purchasing patterns)
-- Objective 2: (E.g., Forecast future sales using machine learning)
-- Objective 3: (E.g., Identify high-value customer segments)
+- Develop a predictive model to classify customers as churn or non-churn.
+- Identify the most influential features driving customer churn.
+- Provide actionable recommendations to reduce churn and enhance customer loyalty.
 
 ## 2. Data Sources
-- [Dataset 1](link) - Description of dataset (e.g., Sales data for 2020–2023)
-- [Dataset 2](link) – Description of dataset (e.g., Customer demographic information)
-- ...
+- [Telco Customer Churn Dataset](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) - Contains customer demographics, service usage, and churn status.
+- Additional internal telecom service data (if applicable).
 
 ## 3. Technologies Used
-- Programming Language: Python (e.g., Pandas, NumPy)
-- Visualization: Matplotlib, Seaborn, Plotly
+- Programming Language: Python (Pandas, NumPy, scikit-learn, imbalanced-learn)
+- Visualization: Matplotlib, Seaborn
+- Model Explainability: LIME
+- Machine Learning Frameworks: XGBoost, LightGBM, CatBoost
 - Version Control: Git
-- Others: Jupyter Notebook
-- ...
+- Environment: Jupyter Notebook
 
 ## 4. Project Structure
 
-```
-telco-churn/
-├── README.md                          <- Main documentation for the project.
-├── requirements.txt                  <- Python dependencies for the project environment.
-├── assets/                          <- Project assets like images.
-│   └── logo-purwadhika.png          <- Logo image file.
-├── data/                           <- All data related to the project.
-│   ├── external/                   <- Data from third-party sources.
-│   │   └── data-external.csv       <- External source data file.
-│   ├── interim/                   <- Transformed/intermediate data.
-│   │   └── data-cleaned.csv        <- Cleaned data ready for further processing.
-│   ├── processed/                 <- Final datasets for modeling.
-│   │   ├── data-test.csv           <- Test dataset.
-│   │   ├── data-train.csv          <- Training dataset.
-│   │   └── data-unseen.csv         <- Unseen dataset for prediction or validation.
-│   └── raw/                       <- Original, unmodified data.
-│       └── data.csv                <- Raw source data file.
-├── models/                        <- Trained models and model artifacts.
-├── notebooks/                     <- Jupyter notebooks for exploration and development.
-│   └── 1.0-bdp-inital-notebook.ipynb  <- Initial exploration notebook.
-├── references/                   <- Documentation and reference materials.
-│   └── external references.txt    <- External reference documentation.
-├── reports/                      <- Generated reports and presentations.
-│   ├── figure/                   <- Figures and graphics used in reports.
-│   │   └── graph.bmp             <- Example graph image.
-│   └── slide/                    <- Presentation slides.
-│       └── Business Presentation.pdf  <- Business presentation file.
-├── src/                         <- Source code for the project.
-└── .git/                        <- Git version control directory (hidden).
-```
-
-## 5. Summary of Finding
+## 5. Summary of Findings
 ### 5.1 Business Insight
-In this section, you can present the **actionable insights** derived from the analysis results.
-### 5.2 Actionable Recommendation
-In this section, you can offer **actionable business recommendations** to address the identified problems.
+- Customers with shorter contract durations (month-to-month) are more likely to churn.
+- Fiber optic internet service users exhibit higher churn rates compared to DSL or no internet service.
+- Features like tenure, monthly charges, and paperless billing status significantly affect churn likelihood.
+- Service add-ons such as online security and device protection help reduce churn risk.
+
+### 5.2 Actionable Recommendations
+- Promote longer-term contracts by offering incentives to reduce churn.
+- Improve fiber optic service quality and customer support to address dissatisfaction.
+- Enhance communication and usability of paperless billing to lower churn associated with this feature.
+- Develop targeted retention campaigns focusing on customers with short tenure and high monthly charges.
+- Bundle device protection and online security services to increase customer satisfaction and loyalty.
 
 ## 6. Contact
-- Name: 
-- Email:
-- Linkedin:
+- Name: Hans Darmawan  
+- Email: [your.email@example.com]  
+- LinkedIn: [linkedin.com/in/yourprofile]  
