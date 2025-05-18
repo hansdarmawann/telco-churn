@@ -4,7 +4,28 @@ By Hans Darmawan - JCDS2602
 Notebook Link: https://github.com/hansdarmawann/telco-churn/blob/main/notebooks/1.0-hdr-init-nb.ipynb
 
 ## Project Structure
-telco-churn/ ├── .git/ <- Git version control files and directories. ├── .gitignore <- Git ignore rules. ├── README.md <- Project documentation. ├── requirements.txt <- Python dependencies. ├── assets/ <- Project assets such as images. │ └── logo-purwadhika.png <- Logo image file. ├── data/ <- Project data files. │ ├── data.csv <- Raw telecom customer churn dataset. │ └── Telco Customer Churn.docx <- Supporting documentation. ├── notebooks/ <- Jupyter notebooks for exploration and modeling. │ ├── 1.0-hdr-init-nb.ipynb <- Initial exploration notebook. │ └── models/ <- Saved model files. │ └── best_tuned_pipeline.joblib <- Final tuned model pipeline. ├── reports/ <- Generated reports and presentations. │ ├── figure/ <- Figures and graphics. │ │ └── graph.bmp <- Example graph image. │ └── slide/ <- Presentation slides. │ └── Business Presentation.pdf <- Business presentation file. ├── struct.txt <- Project structure documentation.
+
+- **telco-churn/**  
+  - **.git/** — Git version control files and directories  
+  - **.gitignore** — Git ignore rules  
+  - **README.md** — Project documentation  
+  - **requirements.txt** — Python dependencies  
+  - **assets/** — Project assets such as images  
+    - *logo-purwadhika.png* — Logo image file  
+  - **data/** — Project data files  
+    - *data.csv* — Raw telecom customer churn dataset  
+    - *Telco Customer Churn.docx* — Supporting documentation  
+  - **notebooks/** — Jupyter notebooks for exploration and modeling  
+    - *1.0-hdr-init-nb.ipynb* — Initial exploration notebook  
+    - **models/** — Saved model files  
+      - *best_tuned_pipeline.joblib* — Final tuned model pipeline  
+  - **reports/** — Generated reports and presentations  
+    - **figure/** — Figures and graphics  
+      - *graph.bmp* — Example graph image  
+    - **slide/** — Presentation slides  
+      - *Business Presentation.pdf* — Business presentation file  
+  - *struct.txt* — Project structure documentation  
+
 
 ## 1. Business Understanding
 The business context and objectives for the telecom customer churn prediction project. The challenge of customer churn, which impacts revenue and growth, is addressed by developing predictive models to identify at-risk customers. Key factors influencing churn are examined, and actionable insights are aimed to be provided for improving retention. A structured analytical approach is planned, including model evaluation based on recall, with success criteria established to ensure high performance and interpretability.
