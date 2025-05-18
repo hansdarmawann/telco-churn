@@ -27,8 +27,7 @@ By Hans Darmawan - JCDS2602
     - **figure/** — Figures and graphics  
       - *graph.bmp* — Example graph image  
     - **slide/** — Presentation slides  
-      - *Business Presentation.pdf* — Business presentation file  
-  - *struct.txt* — Project structure documentation  
+      - *Business Presentation.pdf* — Business presentation file
 
 ## Project Overview
 ### 1. Business Understanding
