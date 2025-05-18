@@ -1,6 +1,8 @@
 # Predicting Customer Churn in Telecom: A Machine Learning Approach
 By Hans Darmawan - JCDS2602
 
+## Project Shortcut Links
+
 - Notebook Link           : 
     + https://github.com/hansdarmawann/telco-churn/blob/main/notebooks/1.0-hdr-init-nb.ipynb
 - Saved Best Model Link   : 
