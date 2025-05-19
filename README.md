@@ -3,11 +3,12 @@ By Hans Darmawan - JCDS2602
 
 ## Project Shortcut Links
 
-- Notebook Link           : 
+- Notebook Link             : 
     + https://github.com/hansdarmawann/telco-churn/blob/main/notebooks/1.0-hdr-init-nb.ipynb
-- Saved Best Model Link   : 
+- Saved Best Model Link     : 
     + https://github.com/hansdarmawann/telco-churn/blob/main/notebooks/models/best_tuned_pipeline.joblib
-
+- Presentation Link         :
+    + https://github.com/hansdarmawann/telco-churn/blob/main/reports/telco-churn-hd.pdf
 ## Project Overview
 
 ### 1. Business Understanding  
