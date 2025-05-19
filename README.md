@@ -4,7 +4,7 @@ By Hans Darmawan - JCDS2602
 ## Project Shortcut Links
 
 - Notebook Link           : 
-    + https://github.com/hansdarmawann/telco-churn/blob/main/notebooks/1.2-hdr-init-nb.ipynb
+    + https://github.com/hansdarmawann/telco-churn/blob/main/notebooks/1.0-hdr-init-nb.ipynb
 - Saved Best Model Link   : 
     + https://github.com/hansdarmawann/telco-churn/blob/main/notebooks/models/best_tuned_pipeline.joblib
 
@@ -29,4 +29,4 @@ The best-tuned model is evaluated on the test set, achieving high recall scores 
 The deployment phase includes saving the final model pipeline using joblib for future use. Guidance is provided on loading the saved model and preparing new customer data for prediction, with example scenarios illustrating practical application. Model limitations are acknowledged, particularly the tendency to overestimate churn due to recall prioritization. Recommendations for business strategies and ongoing model improvements are outlined to support effective implementation.
 
 ### 7. Conclusion and Recommendations  
-The analysis concludes that contract type, fiber optic Internet service, and paperless billing are significant positive contributors to churn risk. Conversely, longer tenure and protective services such as DeviceProtection and OnlineSecurity reduce churn likelihood. The machine learning model accurately predicts a churn rate of approximately 26.7%, matching the observed rate. Business recommendations include promoting longer-term contracts, improving fiber optic service quality, enhancing paperless billing communication, and implementing personalized retention strategies. Model improvement suggestions emphasize balancing precision and recall through threshold adjustment and ensuring regular retraining to adapt to evolving customer behavior.
+The conclusion highlighted that contract type has the strongest positive impact on churn, with certain contracts increasing the likelihood of customers leaving. Fiber optic internet service also raises churn risk, while longer tenure reduces it. The machine learning approach improved recall by about 9% and lowered false negatives and positives, saving nearly $80,000 annually compared to the rule-based system. Business recommendations include promoting favorable contracts, investing in fiber optic services, targeting retention efforts at newer customers, educating customers about service features, collecting feedback, analyzing customer segments, and monitoring key metrics. For model improvement, it is advised to balance precision and recall by adjusting thresholds or using metrics like the F1-score, and to retrain models regularly to keep up with changing customer behaviors and market conditions.
