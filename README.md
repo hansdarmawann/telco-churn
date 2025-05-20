@@ -9,6 +9,8 @@ By Hans Darmawan - JCDS2602
     + https://github.com/hansdarmawann/telco-churn/blob/main/notebooks/models/best_tuned_pipeline.joblib
 - Presentation Link         :
     + https://github.com/hansdarmawann/telco-churn/blob/main/reports/telco-churn-hd.pdf
+- Presentation Video Link   :
+    + https://drive.google.com/file/d/1SuNqAMYg2EE_-6jiF77Sd0xxabokjAuT/view?usp=sharing
     
 ## Project Overview
 
